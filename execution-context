@@ -1,0 +1,46 @@
+1. Global Execution Context:
+
+The global execution context is created when the script starts executing.
+It represents the default environment where code runs in a global scope.
+There is only one global execution context in a JavaScript program.
+It includes global variables and functions that are accessible throughout the program.
+
+2.Function Execution Context:
+
+A function execution context is created whenever a function is invoked.
+It represents the environment in which the function code is executed.
+Each function has its own execution context, which is created and destroyed whenever the function is called and completes its execution.
+It includes local variables, function arguments, and the function's scope chain.
+
+3. Eval Execution Context:
+
+The eval function in JavaScript can be used to execute code dynamically.
+When code is evaluated using eval, a new execution context called the eval execution context is created.
+
++-----------------+
+| Global Context  |
+|                 |
+|    Variables    |
+|   and Functions |
+|                 |
+|   Scope Chain   |
+|                 |
+|   Global Object |
++-----------------+
+        ^
+        |
+        |
+        |
+        v
++-----------------+
+| Function Context|
+|                 |
+|    Variables    |
+|   and Functions |
+|                 |
+|   Scope Chain   |
+|                 |
+|   Outer Context |
++-----------------+
+
+
