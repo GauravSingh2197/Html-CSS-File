@@ -1,0 +1,30 @@
+.static-element {
+  position: static;
+}
+
+
+.fixed-element {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+
+.sticky-element {
+  position: sticky;
+  top: 10px;
+}
+
+
+.relative-element {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+
+.absolute-element {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
